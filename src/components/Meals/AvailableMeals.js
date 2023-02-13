@@ -12,7 +12,7 @@ const [httpError, setHttpError] = useState();
   useEffect(() => {
  
       const fetchMeals = async () => {
-      const response = await fetch('https://custom-5f570-default-rtdb.europe-west1.firebasedatabase.app/meals');
+      const response = await fetch('https://custom-5f570-default-rtdb.europe-west1.firebasedatabase.app/meals.json');
 
       if (!response.ok) {
         throw new Error('Something went wrong!');
